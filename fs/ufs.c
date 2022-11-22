@@ -38,6 +38,7 @@
 #include "ufs.h"
 
 #if SYSNAME == Linux
+#include <sys/sysmacros.h>
 #define NPFS_USE_AIO
 #else
 #undef NPFS_USE_AIO
