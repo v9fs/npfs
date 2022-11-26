@@ -2035,7 +2035,7 @@ main(int argc, char *argv[])
 
 	port = 564;
 	nwthreads = 16;
-	msize = 8216;
+	msize = (128*1024)+24;
 	while ((c = getopt(argc, argv, "dsp:w:m:")) != -1) {
 		switch (c) {
 		case 'd':

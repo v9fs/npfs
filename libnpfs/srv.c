@@ -62,7 +62,7 @@ np_srv_create(int nwthread)
 	srv = malloc(sizeof(*srv));
 	pthread_mutex_init(&srv->lock, NULL);
 	pthread_cond_init(&srv->reqcond, NULL);
-	srv->msize = 8216;
+	srv->msize = (128*1024)+24;
 	srv->dotu = 1;
 	srv->srvaux = NULL;
 	srv->treeaux = NULL;
